@@ -1,4 +1,11 @@
 package vehicles.air;
 
-public interface IAirVehicle {
+import vehicles.IVehicle;
+
+public interface IAirVehicle extends IVehicle {
+
+    public int getCapacity();
+    public void setCapacity(int capacity);
+
+
 }

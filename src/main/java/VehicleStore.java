@@ -1,5 +1,6 @@
 import products.Product;
 import vehicles.*;
+import vehicles.air.Plane;
 import vehicles.land.Bicycle;
 import vehicles.land.Car;
 import vehicles.water.Kayak;
@@ -42,6 +43,13 @@ public class VehicleStore {
 
         System.out.println(boat.getPrice());
         System.out.println(boat.getFuel());
+
+//        Testing air vehicles
+        Plane plane1 = new Plane(150000,700, new Product("Concorde",100000000,1),new Engine(7000,30000));
+        vehicles.add(plane1);
+
+        System.out.println(plane1.getCapacity());
+        System.out.println(plane1.getFuel());
 
     }
 }
